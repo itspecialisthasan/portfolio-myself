@@ -1,0 +1,96 @@
+.home {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+      color: #717171;
+      margin: 0px;
+      font-weight: 500;
+      font-size: 3rem;
+      line-height: 4rem;
+      position: relative;
+      overflow: hidden;
+      white-space: nowrap;
+      animation: typingtexth1 2.5s steps(30, end);
+    }
+
+    h4 {
+      color: #717171;
+      margin: 0px;
+      font-weight: 500;
+      font-size: 2rem;
+      line-height: 4rem;
+      position: relative;
+      overflow: hidden;
+      white-space: nowrap;
+      animation: typingtexth4 3.5s steps(30, end);
+    }
+  }
+
+  &__contact-me {
+    display: flex;
+    justify-content: center;
+
+    button {
+      cursor: pointer;
+      padding: 10px 70px;
+      background: #fbfbfb;
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #717171;
+      border: 1px solid #717171;
+
+      &:hover {
+        background: #717171;
+        color: #fbfbfb;
+        transition: all 0.5s ease-in;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .home__text-wrapper h1 {
+    font-size: 1rem;
+    line-height: 4rem;
+  }
+}
+@media only screen and (min-width: 551px) and (max-width: 768px) {
+  .home__text-wrapper h1 {
+    font-size: 2rem;
+    line-height: 4rem;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 990px) {
+  .home__text-wrapper h1 {
+    font-size: 3rem;
+    line-height: 6rem;
+  }
+}
+
+@keyframes typingtexth1 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typingtexth4 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
